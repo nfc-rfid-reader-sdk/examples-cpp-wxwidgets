@@ -15,7 +15,7 @@
 #include <wx/string.h>
 //*)
 
-#include "lib/include/indoor_display_lib.h"
+#include "indoor_display_lib_1.h"
 
 //helper functions
 enum wxbuildinfoformat {
@@ -142,6 +142,7 @@ indoor_display_testFrame::indoor_display_testFrame(wxWindow* parent,wxWindowID i
     Connect(ID_BUTTON9,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&indoor_display_testFrame::OnBtnFwVerClick);
     Connect(ID_BUTTON10,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&indoor_display_testFrame::OnBtnDllVerClick);
     //*)
+    GetLoadLibrary();
 }
 
 indoor_display_testFrame::~indoor_display_testFrame()

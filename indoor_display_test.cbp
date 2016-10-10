@@ -30,7 +30,7 @@
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/indoor_display_test" prefix_auto="1" extension_auto="1" />
+				<Option output="indoor_display_test" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -82,13 +82,13 @@
 			<Add library="libcomctl32.a" />
 			<Add library="libwsock32.a" />
 			<Add library="libodbc32.a" />
-			<Add library="display_rgb_8x6-x86" />
-			<Add directory="lib/Windows/x86/" />
+			<Add directory="." />
 		</Linker>
 		<Unit filename="indoor_display_testApp.cpp" />
 		<Unit filename="indoor_display_testApp.h" />
 		<Unit filename="indoor_display_testMain.cpp" />
 		<Unit filename="indoor_display_testMain.h" />
+		<Unit filename="load_library.cpp" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
